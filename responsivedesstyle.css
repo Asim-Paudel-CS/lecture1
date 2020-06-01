@@ -1,0 +1,48 @@
+/*mediaquery*/
+h1{
+  text-align: center;
+}
+.grid{
+  background-color: springgreen;
+  display: grid;
+  padding: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  grid-template-columns: auto 200px;
+}
+.griditm{
+  background-color: lightgrey;
+  font-size: 20px;
+}
+.boxes{
+  display: flex;
+  flex-wrap:wrap;
+}
+.boxes > div{
+  background-color: grey;
+  font-size: 20px;
+  padding:20px;
+  width:200px;
+  margin: 20px;
+}
+@media print{
+  .screenonly{
+    display: none;
+  }
+}
+@media (min-height:500px){
+  body{
+    background-color: lightgrey;
+  }
+  h1::before{
+    content: "BIG Welcome";
+  }
+}
+@media (max-height:499px){
+  body{
+    background-color: lightblue;
+  }
+  h1::before{
+    content: "Small Welcome";
+  }
+}
