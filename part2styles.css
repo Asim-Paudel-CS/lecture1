@@ -1,0 +1,12 @@
+h1,h2{
+  color: red;
+  text-align: center;
+}
+/*selecting decendents*/
+ol li {
+  color: red;
+}
+/*selecting immidiate decendents*/
+ul > li {
+  color: blue;
+}
